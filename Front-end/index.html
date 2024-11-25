@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <title> Libra Crédito </title>
+</head>
+<body>
+    <nav>
+        <div class="nav-side">
+            <div class="nav-side-content">
+                <div>
+                    <div id="logo-libra"> <img src="https://www.libracredito.com.br/images/site/logo-libra-credito.png"> </div>
+                </div>
+                
+                <div>
+                    <a href="http://192.168.1.224/">
+                        <div class="blockIcone">
+                            <nav>
+                                <img src="https://cdn-icons-png.flaticon.com/128/3997/3997635.png" class="icone">
+                            </nav>
+                            <nav>
+                                <p>Leitor PDF</p>
+                            </nav>
+                       </div>
+                    </a>
+                </div>
+                <!-- <div>
+                   <div class="blockIcone">
+                        <nav>
+                            <img src="https://cdn-icons-png.flaticon.com/128/3997/3997635.png" class="icone">
+                        </nav>
+                        <nav>
+                            <p>Atualização</p>
+                        </nav>
+                   </div>
+                </div>
+                <div>
+                   <div class="blockIcone">
+                        <nav>
+                            <img src="https://cdn-icons-png.flaticon.com/128/2504/2504768.png" class="icone">
+                        </nav>
+                        <nav>
+                            <p>Atualização</p>
+                        </nav>
+                   </div>
+                </div> -->
+                <img src="https://cdn-icons-png.flaticon.com/128/6467/6467134.png" class="icone-x">
+            </div>
+        </div>
+    </nav>
+    <section>
+        <img src="https://cdn-icons-png.flaticon.com/128/9663/9663120.png" class="menu-hamburgue">
+        <div class="block-value">
+            <form id="formularioUser">
+                <br>
+                <br>
+                <label for="button-btn"> <img class="label" src="https://cdn-icons-png.flaticon.com/128/7159/7159081.png"></img></label> 
+                <input name="arquivo" type="file" accept="application/pdf" id="button-btn" onchange="NomePDF()" multiple> <br> <br> 
+                <br> 
+                <p>Upload de arquivos</p>
+                <br> 
+                <button id="buttonNome"> Enviar doc </button>
+                <button id="buttonDownload"> realizar download </button>
+            </form>
+            <nav class="img-pdf">
+                
+            </nav>
+        </div>
+        <div class="block" id="load_block">
+            <hr id="hr_1"/> <hr id="hr_2"/><hr id="hr_3"/><hr id="hr_4"/>
+        </div>
+    </section>
+    <script src="/Front-end/front-end.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+</body>
+</html>
